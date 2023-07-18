@@ -14,7 +14,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-x-superset-image: &superset-image dvjuiz/superset:${TAG:-20230716}
+x-superset-image: &superset-image simplitdocker/superset:${TAG:-20230716}
 x-superset-user: &superset-user root
 x-superset-depends-on: &superset-depends-on
   - db
@@ -30,7 +30,7 @@ x-superset-volumes: &superset-volumes
 version: "3.7"
 services:
   redis:
-    image: dvjuiz/superset-redis-7:20230716
+    image: simplitdocker/superset-redis-7:20230716
     container_name: superset_cache
     restart: unless-stopped
     ports:
@@ -40,7 +40,7 @@ services:
 
   db:
     env_file: docker/.env
-    image: dvjuiz/superset-postgres-14:20230716
+    image: simplitdocker/superset-postgres-14:20230716
     container_name: superset_db
     restart: unless-stopped
     ports:
@@ -65,7 +65,7 @@ services:
   superset-websocket:
     container_name: superset_websocket
     #build: ./superset-websocket
-    image: dvjuiz/superset-websocket:20230716
+    image: simplitdocker/superset-websocket:20230716
     ports:
       - 8080:8080
     depends_on:
@@ -104,7 +104,7 @@ services:
       disable: true
 
   superset-node:
-    image: dvjuiz/superset-node-16:20230716
+    image: simplitdocker/superset-node-16:20230716
     container_name: superset_node
     command: ["/app/docker/docker-frontend.sh"]
     env_file: docker/.env
