@@ -1,0 +1,76 @@
+{
+  "app": "superset",
+  "entrypoints": {
+    "preamble": {
+      "css": [],
+      "js": [
+        "/static/assets/vendors.bff83cb3.entry.js",
+        "/static/assets/preamble.09ba1934.entry.js"
+      ]
+    },
+    "theme": {
+      "css": [],
+      "js": [
+        "/static/assets/theme.65e240ce.entry.js"
+      ]
+    },
+    "menu": {
+      "css": [],
+      "js": [
+        "/static/assets/vendors.bff83cb3.entry.js",
+        "/static/assets/vendors-node_modules_ctrl_tinycolor_dist_module_index_js-node_modules_ansi-html-community_ind-38a375.7f561fbb.entry.js",
+        "/static/assets/vendors-node_modules_react-icons_all-files_fa_FaAlignCenter_js-node_modules_react-icons_all-f-1e7b59.455a289f.entry.js",
+        "/static/assets/node_modules_moment_locale_sync_recursive_-packages_superset-ui-core_src_ui-overrides_Extensi-abeac2.45f912af.entry.js",
+        "/static/assets/menu.318f9642.entry.js"
+      ]
+    },
+    "spa": {
+      "css": [],
+      "js": [
+        "/static/assets/vendors.bff83cb3.entry.js",
+        "/static/assets/thumbnail.3acfb90e.entry.js",
+        "/static/assets/vendors-node_modules_ctrl_tinycolor_dist_module_index_js-node_modules_ansi-html-community_ind-38a375.7f561fbb.entry.js",
+        "/static/assets/vendors-node_modules_react-icons_all-files_fa_FaAlignCenter_js-node_modules_react-icons_all-f-1e7b59.455a289f.entry.js",
+        "/static/assets/vendors-node_modules_ace-builds_src-min-noconflict_mode-css_js-node_modules_ace-builds_src-mi-0e0816.ed577ded.entry.js",
+        "/static/assets/node_modules_moment_locale_sync_recursive_-packages_superset-ui-core_src_ui-overrides_Extensi-abeac2.45f912af.entry.js",
+        "/static/assets/src_setup_setupPlugins_ts.0c63942e.entry.js",
+        "/static/assets/spa.3aa28e31.entry.js"
+      ]
+    },
+    "embedded": {
+      "css": [],
+      "js": [
+        "/static/assets/vendors.bff83cb3.entry.js",
+        "/static/assets/vendors-node_modules_ctrl_tinycolor_dist_module_index_js-node_modules_ansi-html-community_ind-38a375.7f561fbb.entry.js",
+        "/static/assets/vendors-node_modules_react-icons_all-files_fa_FaAlignCenter_js-node_modules_react-icons_all-f-1e7b59.455a289f.entry.js",
+        "/static/assets/node_modules_moment_locale_sync_recursive_-packages_superset-ui-core_src_ui-overrides_Extensi-abeac2.45f912af.entry.js",
+        "/static/assets/embedded.9f02b9e7.entry.js"
+      ]
+    },
+    "sqllab": {
+      "css": [],
+      "js": [
+        "/static/assets/vendors.bff83cb3.entry.js",
+        "/static/assets/vendors-node_modules_ctrl_tinycolor_dist_module_index_js-node_modules_ansi-html-community_ind-38a375.7f561fbb.entry.js",
+        "/static/assets/vendors-node_modules_react-icons_all-files_fa_FaAlignCenter_js-node_modules_react-icons_all-f-1e7b59.455a289f.entry.js",
+        "/static/assets/node_modules_moment_locale_sync_recursive_-packages_superset-ui-core_src_ui-overrides_Extensi-abeac2.45f912af.entry.js",
+        "/static/assets/sqllab.303b60ae.entry.js"
+      ]
+    },
+    "profile": {
+      "css": [],
+      "js": [
+        "/static/assets/vendors.bff83cb3.entry.js",
+        "/static/assets/vendors-node_modules_ctrl_tinycolor_dist_module_index_js-node_modules_ansi-html-community_ind-38a375.7f561fbb.entry.js",
+        "/static/assets/profile.90f317b5.entry.js"
+      ]
+    },
+    "showSavedQuery": {
+      "css": [],
+      "js": [
+        "/static/assets/vendors.bff83cb3.entry.js",
+        "/static/assets/showSavedQuery.1b9ac727.entry.js"
+      ]
+    }
+  }
+}
