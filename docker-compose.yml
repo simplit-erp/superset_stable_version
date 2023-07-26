@@ -31,7 +31,7 @@ version: "3.7"
 services:
   redis:
     image: simplitdocker/superset-redis-7:20230716
-    container_name: superset_cache
+    container_name: superset_cache_simplit
     restart: unless-stopped
     ports:
       - "127.0.0.1:6379:6379"
@@ -41,7 +41,7 @@ services:
   db:
     env_file: docker/.env
     image: simplitdocker/superset-postgres-14:20230716
-    container_name: superset_db
+    container_name: superset_db_simplit
     restart: unless-stopped
     ports:
       - "127.0.0.1:5432:5432"
@@ -51,7 +51,7 @@ services:
   superset:
     env_file: docker/.env
     image: *superset-image
-    container_name: superset_app
+    container_name: superset_app_simplit
     command: ["/app/docker/docker-bootstrap.sh", "app"]
     restart: unless-stopped
     ports:
@@ -63,7 +63,7 @@ services:
       CYPRESS_CONFIG: "${CYPRESS_CONFIG}"
 
   superset-websocket:
-    container_name: superset_websocket
+    container_name: superset_websocket_simplit
     #build: ./superset-websocket
     image: simplitdocker/superset-websocket:20230716
     ports:
@@ -92,7 +92,7 @@ services:
 
   superset-init:
     image: *superset-image
-    container_name: superset_init
+    container_name: superset_init_simplit
     command: ["/app/docker/docker-init.sh"]
     env_file: docker/.env
     depends_on: *superset-depends-on
@@ -105,7 +105,7 @@ services:
 
   superset-node:
     image: simplitdocker/superset-node-16:20230716
-    container_name: superset_node
+    container_name: superset_node_simplit
     command: ["/app/docker/docker-frontend.sh"]
     env_file: docker/.env
     depends_on: *superset-depends-on
@@ -113,7 +113,7 @@ services:
 
   superset-worker:
     image: *superset-image
-    container_name: superset_worker
+    container_name: superset_worker_simplit
     command: ["/app/docker/docker-bootstrap.sh", "worker"]
     env_file: docker/.env
     restart: unless-stopped
@@ -128,7 +128,7 @@ services:
 
   superset-worker-beat:
     image: *superset-image
-    container_name: superset_worker_beat
+    container_name: superset_worker_beat_simplit
     command: ["/app/docker/docker-bootstrap.sh", "beat"]
     env_file: docker/.env
     restart: unless-stopped
@@ -140,7 +140,7 @@ services:
 
   superset-tests-worker:
     image: *superset-image
-    container_name: superset_tests_worker
+    container_name: superset_tests_worker_simplit
     command: ["/app/docker/docker-bootstrap.sh", "worker"]
     env_file: docker/.env
     environment:
