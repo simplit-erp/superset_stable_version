@@ -54,8 +54,11 @@ services:
     container_name: superset_app_simplit
     command: ["/app/docker/docker-bootstrap.sh", "app"]
     restart: unless-stopped
+    cap_add:
+      - SYS_PTRACE
     ports:
       - 8088:8088
+      - 5678:5678
     user: *superset-user
     depends_on: *superset-depends-on
     volumes: *superset-volumes
@@ -64,7 +67,7 @@ services:
 
   superset-websocket:
     container_name: superset_websocket_simplit
-    #build: ./superset-websocket
+    build: ./superset-websocket
     image: simplitdocker/superset-websocket:20230716
     ports:
       - 8080:8080

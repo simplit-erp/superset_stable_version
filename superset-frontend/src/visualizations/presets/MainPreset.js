@@ -89,26 +89,26 @@ export default class MainPreset extends Preset {
 
     super({
       name: 'Legacy charts',
-      presets: [new DeckGLChartPreset()],
+//DJ      presets: [new DeckGLChartPreset()],
       plugins: [
-        new AreaChartPlugin().configure({ key: 'area' }),
-        new BarChartPlugin().configure({ key: 'bar' }),
-        new BigNumberChartPlugin().configure({ key: 'big_number' }),
+//DJ        new AreaChartPlugin().configure({ key: 'area' }),
+//DJ        new BarChartPlugin().configure({ key: 'bar' }),
+//DJ        new BigNumberChartPlugin().configure({ key: 'big_number' }),
         new BigNumberTotalChartPlugin().configure({ key: 'big_number_total' }),
-        new EchartsBoxPlotChartPlugin().configure({ key: 'box_plot' }),
+/*        new EchartsBoxPlotChartPlugin().configure({ key: 'box_plot' }),
         new BubbleChartPlugin().configure({ key: 'bubble' }),
         new BulletChartPlugin().configure({ key: 'bullet' }),
         new CalendarChartPlugin().configure({ key: 'cal_heatmap' }),
         new ChordChartPlugin().configure({ key: 'chord' }),
         new CompareChartPlugin().configure({ key: 'compare' }),
-        new CountryMapChartPlugin().configure({ key: 'country_map' }),
+        new CountryMapChartPlugin().configure({ key: 'country_map' }),*/
         new DistBarChartPlugin().configure({ key: 'dist_bar' }),
-        new EventFlowChartPlugin().configure({ key: 'event_flow' }),
+/*DJ        new EventFlowChartPlugin().configure({ key: 'event_flow' }),
         new FilterBoxChartPlugin().configure({ key: 'filter_box' }),
-        new EchartsFunnelChartPlugin().configure({ key: 'funnel' }),
+        new EchartsFunnelChartPlugin().configure({ key: 'funnel' }),*/
         new EchartsTreemapChartPlugin().configure({ key: 'treemap_v2' }),
         new EchartsGaugeChartPlugin().configure({ key: 'gauge_chart' }),
-        new EchartsGraphChartPlugin().configure({ key: 'graph_chart' }),
+/*DJ        new EchartsGraphChartPlugin().configure({ key: 'graph_chart' }),
         new EchartsRadarChartPlugin().configure({ key: 'radar' }),
         new EchartsMixedTimeseriesChartPlugin().configure({
           key: 'mixed_timeseries',
@@ -120,21 +120,21 @@ export default class MainPreset extends Preset {
         new MapBoxChartPlugin().configure({ key: 'mapbox' }),
         new PairedTTestChartPlugin().configure({ key: 'paired_ttest' }),
         new ParallelCoordinatesChartPlugin().configure({ key: 'para' }),
-        new PartitionChartPlugin().configure({ key: 'partition' }),
+        new PartitionChartPlugin().configure({ key: 'partition' }),*/
         new EchartsPieChartPlugin().configure({ key: 'pie' }),
         new PivotTableChartPluginV2().configure({ key: 'pivot_table_v2' }),
-        new RoseChartPlugin().configure({ key: 'rose' }),
+/*DJ        new RoseChartPlugin().configure({ key: 'rose' }),
         new SankeyChartPlugin().configure({ key: 'sankey' }),
-        new SunburstChartPlugin().configure({ key: 'sunburst' }),
+        new SunburstChartPlugin().configure({ key: 'sunburst' }),*/
         new TableChartPlugin().configure({ key: 'table' }),
-        new TimePivotChartPlugin().configure({ key: 'time_pivot' }),
+/*DJ        new TimePivotChartPlugin().configure({ key: 'time_pivot' }),
         new TimeTableChartPlugin().configure({ key: 'time_table' }),
         new WordCloudChartPlugin().configure({ key: 'word_cloud' }),
-        new WorldMapChartPlugin().configure({ key: 'world_map' }),
+        new WorldMapChartPlugin().configure({ key: 'world_map' }),*/
         new EchartsAreaChartPlugin().configure({
           key: 'echarts_area',
         }),
-        new EchartsTimeseriesChartPlugin().configure({
+/*DJ        new EchartsTimeseriesChartPlugin().configure({
           key: 'echarts_timeseries',
         }),
         new EchartsTimeseriesBarChartPlugin().configure({
@@ -160,7 +160,7 @@ export default class MainPreset extends Preset {
         new EchartsTreeChartPlugin().configure({ key: 'tree_chart' }),
         new EchartsSunburstChartPlugin().configure({ key: 'sunburst_v2' }),
         new HandlebarsChartPlugin().configure({ key: 'handlebars' }),
-        ...experimentalplugins,
+        ...experimentalplugins,*/
       ],
     });
   }

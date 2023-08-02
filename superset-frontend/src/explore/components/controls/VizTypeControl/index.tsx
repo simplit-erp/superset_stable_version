@@ -102,7 +102,7 @@ const VizTypeControl = ({
 
   return (
     <>
-      <div
+{/*DJ      <div
         css={(theme: SupersetTheme) => css`
           min-width: ${theme.gridUnit * 72}px;
           max-width: fit-content;
@@ -123,7 +123,7 @@ const VizTypeControl = ({
         <span role="button" tabIndex={0} onClick={openModal}>
           {t('View all charts')}
         </span>
-      </div>
+  </div>*/}
       <UnpaddedModal
         show={showModal}
         onHide={onCancel}
